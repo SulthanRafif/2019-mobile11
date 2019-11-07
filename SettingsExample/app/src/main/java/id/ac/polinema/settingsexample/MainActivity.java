@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import id.ac.polinema.settingsexample.fragments.AdvancedFragment;
 import id.ac.polinema.settingsexample.fragments.DialogsFragment;
 import id.ac.polinema.settingsexample.fragments.HomeFragment;
-import id.ac.polinema.settingsexample.fragments.SettingsFragment;
+import id.ac.polinema.settingsexample.fragments.SettingFragment;
 import id.ac.polinema.settingsexample.fragments.WidgetsFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        openFragment(new SettingFragment());
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
